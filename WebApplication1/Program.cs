@@ -1,3 +1,4 @@
+
 using System;
 
 public class Employee
@@ -17,7 +18,7 @@ public class Manager : Employee
     public int Id { get; set; }
     public string Designation { get; set; }
 
-    public Manager(int id, string name, int salary, string designation)
+    public Manager(int id,string name, int salary, string designation)
         : base(name, salary)
     {
         Id = id;
@@ -37,8 +38,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Manager manager = new Manager(200414543, "AURANG ZAIB", 90000, "Manager");
-
+        Manager manager = new Manager(200414539, "Murtaza", 80000, " senior Manager");
         manager.PrintDetails();
     }
 }
